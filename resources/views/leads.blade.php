@@ -1,5 +1,5 @@
 <x-layout>
-    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/public/app.css">
     <div class="form-body">
         <div class="row">
             <div class="form-holder">
