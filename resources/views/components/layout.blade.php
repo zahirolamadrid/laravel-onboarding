@@ -4,15 +4,6 @@
     <title>Datos personales</title>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-    </nav>
-</header>
 
 <main>
     {{ $slot }}
