@@ -32,7 +32,7 @@
             @empty
                 <td colspan="6">
                                 <span class="text-danger">
-                                    <strong>No Product Found!</strong>
+                                    <strong>¡Producto no encontrado!</strong>
                                 </span>
                 </td>
             @endforelse
