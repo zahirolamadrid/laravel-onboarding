@@ -1,12 +1,13 @@
 <x-layout>
     <div>
-        <h1><label>Crear producto</label></h1>
+        <h1><label>{{$product->name}}</label></h1>
     </div>
     <div>
-        <label>Nombre del producto:</label>
-        <label>Producto</label>
-        <br>
-        <label>Descripción del producto:</label>
-        <label>Producto</label>
+        <h3><label>Descripción del producto:</label></h3>
+        <label>{{$product->description}}</label>
+    </div>
+    <br>
+    <div>
+        <button><a href="{{ route('products.index') }}">Regresar</a></button>
     </div>
 </x-layout>

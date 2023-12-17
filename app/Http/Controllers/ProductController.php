@@ -3,26 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
-
 
 class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): View
     {
-        return view('products.index');
+        $products = Product::all();
+        return view('products.index', compact('products'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(): View
     {
         return view('products.create');
     }
@@ -30,23 +30,31 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProductRequest $request)
+    public function store(StoreProductRequest $request) : RedirectResponse
     {
-        return view('products.index');
+
+        $product = new Product();
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->save();
+        return redirect()->route('products.index')
+                ->withSuccess('El nuevo producto fue agregado satisfactoriamente.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show(Product $product): View
     {
-        return view('products.show');
+        return view('products.show', [
+            'product' => $product
+        ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $product)
+    public function edit(Product $product): View
     {
         return view('products.edit',compact('product'));
     }
@@ -54,16 +62,21 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProductRequest $request, Product $product)
+    public function update(UpdateProductRequest $request, Product $product): RedirectResponse
     {
-        return "Actualizar un producto";
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->save();
+        return redirect()->route('products.index')
+            ->withSuccess('El nuevo producto fue actualizado satisfactoriamente.');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Product $product)
+    public function destroy(Product $product): RedirectResponse
     {
-        return view('products.index');
+        $product->delete();
+        return redirect()->route('products.index');
     }
 }

@@ -3,20 +3,29 @@
         <h1><label>Editar producto</label></h1>
     </div>
     <div>
-        <form action="">
-            <label>
+        <form action="{{ route('products.update', $product->id) }}" method="post">
+            @csrf
+            @method("put")
+            <label for="product-name">
                 Nombre del producto:
-                <br>
-                <input  type="text" name="name">
             </label>
+                <br>
+            <input id="product-name" type="text" name="product-name" value="{{ $product->name }}">
+
             <br>
-            <label>
+            <label for="description">
                 Descripción del producto:
                 <br>
-                <textarea name="description" rows="6"></textarea>
+                <textarea id="description" name="description" rows="6">{{$product->description}}</textarea>
             </label>
+            <br>
+            <div>
+                <button type="submit">Guardar</button>
+            </div>
         </form>
+        <br>
+        <div>
+            <button><a href="{{ route('products.index') }}">Regresar</a></button>
+        </div>
     </div>
-    <br>
-    <div><button><a href="/products">Regresar</a></button></div>
 </x-layout>
