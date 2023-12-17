@@ -1,6 +1,6 @@
 <x-layout>
         <h1>¡Regístrate en nuestra plataforma!</h1>
-        <p>Bienvenido a Kapital, completa el registro</p>
+        <p>Bienvenido a Laravel Onboarding, completa el registro</p>
     <h4>Persona física con actividad empresarial</h4>
 
     <form method="POST" action="/leads">
@@ -36,7 +36,7 @@
             </div>
             <br>
             <div>
-                <label class="info" for="rfc">RFC</label>
+                <label class="info" for="rfc">RFC:</label>
                 <input type="text" id="rfc" name="rfc" placeholder="RFC*" required>
             </div>
             <br>
@@ -94,11 +94,6 @@
             <label for="privacy" class="terms">He leído y acepto el <a href=""><strong>Aviso de Privacidad</strong></a></label>
         </div>
         <br>
-        <div>
-            <input id="declaration" type="checkbox" name="declaration">
-            <label for="declaration" class="terms"><a href=""><strong>Declaraciones</strong></a> de aceptación de prestación de servicios y/o productos con Corporación Nomi Fin, S.A. de C.V., SOFOM, E.N.R.</label>
-        </div>
-        <br>
-        <button type="submit">Registrarme</button>
+        <button type="submit">Siguiente</button>
     </form>
 </x-layout>
