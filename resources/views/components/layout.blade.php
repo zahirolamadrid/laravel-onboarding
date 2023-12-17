@@ -13,7 +13,7 @@
 </main>
 
 <footer>
-    <p>© 2023 Sitio web de <a href="https://www.app.kapital.mx/">onboarding</a>. Todos los derechos reservados.</p>
+    <p>© 2023 Sitio web de onboarding. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
