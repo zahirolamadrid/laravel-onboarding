@@ -29,8 +29,12 @@ jobs:
       - name: Prepare Laravel Application
         run: php artisan key:generate
 
-      - name: Run format check
-        run: ./vendor/bin/pint -v --test
-
       - name: Run tests
         run: php artisan test
+
+  PHPLint:
+    name: Run format check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run format check
+        run: ./vendor/bin/pint -v --test
