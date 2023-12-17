@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('leads');
 });
+
+Route::get('/address', function () {
+    return view('address');
+});
