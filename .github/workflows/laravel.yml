@@ -29,5 +29,8 @@ jobs:
       - name: Prepare Laravel Application
         run: php artisan key:generate
 
+      - name: Run format check
+        run: ./vendor/bin/pint -v --test
+
       - name: Run tests
         run: php artisan test
