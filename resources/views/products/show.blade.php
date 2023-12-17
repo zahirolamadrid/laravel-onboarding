@@ -1,9 +1,9 @@
 <x-layout>
     <div>
-        <h1><label>{{$product->name}}</label></h1>
+        <h1>{{$product->name}}</h1>
     </div>
     <div>
-        <p><label>{{$product->description}}</label></p>
+        <p>{{$product->description}}</p>
     </div>
     <br>
     <div>

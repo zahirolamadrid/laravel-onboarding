@@ -4,7 +4,7 @@
         <button type="submit"><a href="{{ route('products.create') }}">Adicionar nuevo producto</a></button>
     </div>
     <div>
-        <table class="table table-striped table-bordered">
+         <table class="table table-striped table-bordered">
             <thead>
             <tr>
                 <th scope="col">No.</th>

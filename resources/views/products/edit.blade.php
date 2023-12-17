@@ -1,6 +1,6 @@
 <x-layout>
     <div>
-        <h1><label>Editar producto</label></h1>
+        <h1>Editar producto</h1>
     </div>
     <div>
         <form action="{{ route('products.update', $product->id) }}" method="post">
