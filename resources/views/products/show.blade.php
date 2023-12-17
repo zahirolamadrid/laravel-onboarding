@@ -3,8 +3,7 @@
         <h1><label>{{$product->name}}</label></h1>
     </div>
     <div>
-        <h3><label>Descripción del producto:</label></h3>
-        <label>{{$product->description}}</label>
+        <p><label>{{$product->description}}</label></p>
     </div>
     <br>
     <div>
