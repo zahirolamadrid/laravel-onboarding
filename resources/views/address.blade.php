@@ -15,8 +15,8 @@
     </div>
     <br>
     <div>
-        <label for="innernumber">Número interior:</label>
-        <input type="text" id="innernumber" name="innernumber" placeholder="Número interior" required>
+        <label for="inner-number">Número interior:</label>
+        <input type="text" id="inner-number" name="inner-number" placeholder="Número interior" required>
     </div>
     <br>
     <div>
