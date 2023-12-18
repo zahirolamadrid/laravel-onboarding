@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/products', ProductController::class);
+
+Route::get('/address', function () {
+    return view('address');
+});
