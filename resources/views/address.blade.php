@@ -15,8 +15,8 @@
     </div>
         <br>
     <div>
-        <label for="inner-number">Número interior:</label>
-        <input type="text" id="inner-number" name="inner-number" placeholder="Número interior" required>
+        <label for="interior-number">Número interior:</label>
+        <input type="text" id="interior-number" name="interior-number" placeholder="Número interior" required>
     </div>
         <br>
     <div>
@@ -25,19 +25,20 @@
     </div>
         <br>
         <div>
-        <label for="Municipality">Delegación o Municipio:</label>
-        <input type="text" id="Municipality" name="Municipality" placeholder="Delegación o Municipio" required>
+        <label for="municipality">Delegación o Municipio:</label>
+        <input type="text" id="municipality" name="municipality" placeholder="Delegación o Municipio" required>
     </div>
+        <br>
+        <div>
+            <label for="city">Ciudad:</label>
+            <input type="text" id="city" name="city" placeholder="Ciudad" required>
+        </div>
         <br>
     <div>
         <label for="state">Estado:</label>
         <input type="text" id="state" name="state" placeholder="Estado" required>
     </div>
-        <br>
-        <div>
-            <label for="city">Ciudad:</label>
-            <input type="text" id="city" name="state" placeholder="Ciudad" required>
-        </div>
+
         <br>
     <div>
         <label for="postcode">Código Postal:</label>
