@@ -16,7 +16,7 @@
         <br>
     <div>
         <label for="interior-number">Número interior:</label>
-        <input type="text" id="interior-number" name="interior-number" placeholder="Número interior" required>
+        <input type="text" id="interior-number" name="interior-number" placeholder="Número interior">
     </div>
         <br>
     <div>
@@ -42,7 +42,7 @@
         <br>
     <div>
         <label for="postcode">Código Postal:</label>
-        <input type="text" id="postcode" name="postcode" placeholder="Código Postal" required>
+        <input type="number" id="postcode" name="postcode" placeholder="Código Postal" required>
     </div>
         <br>
     <button type="submit">Registrar</button>
