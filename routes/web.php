@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('leads');
 });
+
+Route::resource('/products', ProductController::class);
 
 Route::get('/address', function () {
     return view('address');
