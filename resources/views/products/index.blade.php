@@ -2,12 +2,15 @@
     <style>
         table, th, td {
             border: 1px solid black;
-            border-collapse: collapse;
+        }
+        .add-new-product{
+            width: 20%;
+            background-color: white;
         }
     </style>
     <div><h3>Productos</h3></div>
     <div>
-        <button type="submit"><a href="{{ route('products.create') }}">Adicionar nuevo producto</a></button>
+        <button class="add-new-product" type="submit"><a href="{{ route('products.create') }}">Adicionar nuevo producto</a></button>
     </div>
     <div>
         <br>
