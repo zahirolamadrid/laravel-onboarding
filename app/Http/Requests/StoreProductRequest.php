@@ -23,7 +23,7 @@ class StoreProductRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:250',
-            'description' => 'nullable|string'
+            'description' => 'nullable|string',
         ];
     }
 }
