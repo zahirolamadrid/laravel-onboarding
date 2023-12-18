@@ -5,13 +5,13 @@
     </div>
     <div>
         <br>
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-        </style>
         <table class="table table-striped table-bordered">
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+            </style>
             <thead>
             <tr>
                 <th scope="col">No.</th>
