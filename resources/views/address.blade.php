@@ -1,6 +1,8 @@
 <x-layout>
     <br>
     <h1>FORMULARIO DE DIRECCION</h1>
+    <form method="POST" action="/address">
+        @csrf
     <br>
     <div>
         <label for="street">Calle:</label>
@@ -43,5 +45,6 @@
     </div>
     <br>
     <button type="submit">Registrar</button>
+    </form>
     </x-layout>
 
