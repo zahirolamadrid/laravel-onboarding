@@ -35,7 +35,6 @@
         </div>
         <br>
     <div>
-        //<ol>
         <label for="state">Estado:</label>
         <select name="state" id="state">
             <option value="estadomexico">Estado de México</option>
@@ -69,8 +68,8 @@
             <option value="acaliente">Aguascalientes</option>
             <option value="colima">Colima</option>
             <option value="campeche">Campeche</option>
+
         </select>
-        //</ol>
     </div>
         <br>
     <div>
