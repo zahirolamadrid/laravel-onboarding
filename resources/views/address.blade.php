@@ -35,6 +35,7 @@
         </div>
         <br>
     <div>
+        //<ol>
         <label for="state">Estado:</label>
         <select name="state" id="state">
             <option value="estadomexico">Estado de México</option>
@@ -53,7 +54,7 @@
             <option value="tlaxcala">Tlaxcala</option>
             <option value="qroo">Quintana Roo</option>
             <option value="cohauila">Cohauila de Zaragoza</option>
-            <option value="morelos">morelos</option>
+            <option value="morelos">Morelos</option>
             <option value="slpotosi">San Luis Potosí</option>
             <option value="durango">Durango</option>
             <option value="tabasco">Tabasco</option>
@@ -68,8 +69,8 @@
             <option value="acaliente">Aguascalientes</option>
             <option value="colima">Colima</option>
             <option value="campeche">Campeche</option>
-
         </select>
+        //</ol>
     </div>
         <br>
     <div>
