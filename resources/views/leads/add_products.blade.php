@@ -17,7 +17,7 @@
                 </legend>
                     @foreach($products as $product)
                         <div class="marco">
-                            <input id="product-name" type="checkbox" name="product-name" value="{{$product->id}}" checked>
+                            <input id="product-name" type="checkbox" name="product-name" value="{{$product->id}}">
                             <label for="product-name" class="info">{{$product->name}}</label>
                             <br>
                             <label for="product-description" class="info">{{$product->description}}</label>
