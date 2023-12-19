@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\DB;
+
 
 class AddProductsController extends Controller
 {
@@ -12,7 +13,7 @@ class AddProductsController extends Controller
      */
     public function show(): View
     {
-        $products = DB::table('products')->get();
+        $products= Product::all();
         return view('leads.add_products', compact('products'));
     }
 }
