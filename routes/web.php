@@ -23,4 +23,6 @@ Route::get('/', function () {
 Route::resource('/products', ProductController::class);
 Route::get('/leads/{id}/add-products',[AddProductsController::class,'show']);
 
-
+Route::get('/address', function () {
+    return view('address');
+});
