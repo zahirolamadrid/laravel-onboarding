@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Contracts\View\View;
 
-
 class AddProductsController extends Controller
 {
     /**
@@ -13,9 +12,8 @@ class AddProductsController extends Controller
      */
     public function show(): View
     {
-        $products= Product::all();
+        $products = Product::all();
+
         return view('leads.add_products', compact('products'));
     }
 }
-
-
