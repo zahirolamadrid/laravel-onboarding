@@ -23,5 +23,5 @@ Route::resource('/products', ProductController::class);
 Route::get('/leads/{id}/add-products', [AddProductsController::class, 'show']);
 
 Route::get('/address', function () {
-    return view('address');
+    return view('addressrrtgfd');
 });
