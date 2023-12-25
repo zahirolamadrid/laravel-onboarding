@@ -5,7 +5,7 @@
         <br>
         <br>
         Son necesarios para continuar</p>
-    <form method="POST" action="/leads">
+    <form method="POST" action={{route('create-profile.store')}}>
         @csrf
         <section>
             <fieldset>
@@ -16,32 +16,36 @@
                 </div>
                 <br>
                 <div>
-                    <label class="info" for="confirm-email">Confirma correo electrónico:</label>
-                    <input type="text" id="confirm-email" name="confirm-email" placeholder="Confirma correo electrónico*" pattern="[a-z0-5]{8,0" required>
+                    <label class="info" for="confirm_email">Confirma correo electrónico:</label>
+                    <input type="text" id="confirm_email" name="confirm_email" placeholder="Confirma correo electrónico*" pattern="[a-z0-5]{8,0" >
                 </div>
                 <br>
                 <div>
-                    <label class="info" for="first-name">Nombre:</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="Primer Nombre*" required>
+                    <label class="info" for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Primer Nombre*" required>
                 </div>
                 <br>
                 <div>
-                    <label class="info" for="second-name">Segundo nombre (opcional):</label>
-                    <input type="text" id="second-name" name="second-name" placeholder="Segundo Nombre">
+                    <label class="info" for="second_name">Segundo nombre (opcional):</label>
+                    <input type="text" id="second_name" name="second_name" placeholder="Segundo Nombre">
                 </div>
                 <br>
                 <div>
-                    <label class="info" for="last-name">Primer apellido:</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Primer apellido*" required>
+                    <label class="info" for="lastname">Primer apellido:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Primer apellido*" required>
                 </div>
                 <br>
                 <div>
-                    <label class="info" for="second-last-name">Segundo apellido:</label>
-                    <input type="text" id="second-last-name" name="second-last-name" placeholder="Segundo apellido*" required>
+                    <label class="info" for="second_lastname">Segundo apellido:</label>
+                    <input type="text" id="second_lastname" name="second_lastname" placeholder="Segundo apellido*" required>
                 </div>
                 <div>
                     <label class="info" for="phone">Teléfono:</label>
                     <input type="text" id="phone" name="phone" placeholder="Número de teléfono*" required>
+                </div>
+                <div>
+                    <label class="info" for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña*" required>
                 </div>
 
             </fieldset>
