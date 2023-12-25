@@ -21,6 +21,6 @@ Route::get('/', function () {
 
 Route::resource('/products', ProductController::class);
 
-Route::get('/create-profile', [CreateProfileController::class,'show']);
+Route::get('/create-profile', [CreateProfileController::class,'show'])->name("create-profile.show");
 
-Route::post('/create-profile', [CreateProfileController::class, 'store']);
+Route::post('/create-profile', [CreateProfileController::class, 'store'])->name("create-profile.store");
