@@ -28,7 +28,7 @@ class CreateProfileController extends Controller
         $profile->password = $request->password;
         $profile->phone = $request->phone;
         $profile->save();
-            return redirect()->route('create-profile.show')
+        return redirect()->route('create-profile.show')
         ->withSuccess('Se ha registrado satisfactoriamente.');
 
     }
