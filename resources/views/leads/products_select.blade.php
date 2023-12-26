@@ -8,7 +8,4 @@
     </div>
     @endforeach
     <br>
-    <div>
-        <button><a href="#">Regresar</a></button>
-    </div>
 </x-layout>
