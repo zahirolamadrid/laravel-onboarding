@@ -8,24 +8,26 @@
             margin-bottom: 10px;
         }
     </style>
-    <form action="{{'leads.add_products'}}" method="post">
-        @csrf
-        <section>
-            <fieldset>
-                <legend>
-                   <h2>Plataforma empresarial y Crédito</h2><!-- Título campo -->
-                </legend>
+
+        <form action="{{ route('add_products.store')}}" method="post">
+            @csrf
+            <section>
+                <fieldset>
+                    <legend>
+                       <h2>Plataforma empresarial y Crédito</h2><!-- Título campo -->
+                    </legend>
                     @foreach($products as $product)
-                        <div class="marco">
-                            <input id="product-name" type="checkbox" name="product-name" value="{{$product->id}}">
-                            <label for="product-name" class="info">{{$product->name}}</label>
-                            <br>
-                            <label for="product-description" class="info">{{$product->description}}</label>
-                        </div>
+                    <div class="marco">
+                        <input id="{{$product->id}}" type="checkbox" name="{{$product->id}}" value="{{$product->id}}">
+                        <label for="{{$product->id}}" class="info">{{$product->name}}</label>
+                        <br>
+                        <label for="product-description" class="info">{{$product->description}}</label>
+                    </div>
                     @endforeach
-            </fieldset>
-                <br>
+                </fieldset>
+                    <br>
                 <button type="submit">Siguiente</button>
-        </section>
-    </form>
+            </section>
+        </form>
+
 </x-layout>
