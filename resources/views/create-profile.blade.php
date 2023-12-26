@@ -39,10 +39,12 @@
                     <label class="info" for="second_lastname">Segundo apellido:</label>
                     <input type="text" id="second_lastname" name="second_lastname" placeholder="Segundo apellido*" required>
                 </div>
+                <br>
                 <div>
                     <label class="info" for="phone">Teléfono:</label>
                     <input type="text" id="phone" name="phone" placeholder="Número de teléfono*" required>
                 </div>
+                <br>
                 <div>
                     <label class="info" for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" placeholder="Contraseña*" required>
