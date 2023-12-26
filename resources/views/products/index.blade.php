@@ -8,7 +8,7 @@
             background-color: white;
         }
     </style>
-    <div><h3>Productos</h3></div>
+    <h3>Productos</h3>
     <div>
         <button class="add-new-product" type="submit"><a href="{{ route('products.create') }}">Adicionar nuevo producto</a></button>
     </div>
