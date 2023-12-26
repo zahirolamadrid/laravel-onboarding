@@ -53,6 +53,11 @@
             </fieldset>
         </section>
         <br>
+        <div>
+            <input id="privacy" type="checkbox" name="privacy">
+            <label for="privacy" class="terms">He leído y acepto el <a href=""><strong>Aviso de Privacidad</strong></a></label>
+        </div>
+        <br>
         <button type="submit">Siguiente</button>
     </form>
 </x-layout>
