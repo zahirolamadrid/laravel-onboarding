@@ -21,8 +21,8 @@ Route::get('/', function () {
 
 Route::resource('/products', ProductController::class);
 Route::get('/leads/{id}/add-products', [AddProductsController::class, 'index'])->name('add_products.index');
-Route::post('/leads/add-products',[AddProductsController::class,'store'])->name('add_products.store');
-Route::get('/leads/add-products/products_select',[AddProductsController::class,'show'])->name('products_select.show');
+Route::post('/leads/add-products', [AddProductsController::class, 'store'])->name('add_products.store');
+Route::get('/leads/add-products/products_select', [AddProductsController::class, 'show'])->name('products_select.show');
 
 Route::get('/address', function () {
     return view('address');

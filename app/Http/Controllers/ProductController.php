@@ -38,7 +38,6 @@ class ProductController extends Controller
         $product->name = $request->name;
         $product->description = $request->description;
         $product->save();
-        
 
         return redirect()->route('products.index')
             ->withSuccess('El nuevo producto fue agregado satisfactoriamente.');
