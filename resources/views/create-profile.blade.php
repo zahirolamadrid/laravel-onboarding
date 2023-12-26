@@ -22,7 +22,7 @@
                 <br>
                 <div>
                     <label class="info" for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" placeholder="Primer Nombre*" required>
+                    <input type="text" id="name" name="name" placeholder="Nombre*" required>
                 </div>
                 <br>
                 <div>
