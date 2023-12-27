@@ -12,17 +12,17 @@
                 <br>
                 <div>
                     <label class="info" for="email">Correo electrónico:</label>
-                    <input type="text" id="email" name="email" placeholder="Correo electrónico*" pattern="[a-z0-5]{8,0" required>
+                    <input type="text" id="email" name="email" placeholder="Correo electrónico" required>
                 </div>
                 <br>
                 <div>
                     <label class="info" for="confirm_email">Confirma correo electrónico:</label>
-                    <input type="text" id="confirm_email" name="confirm_email" placeholder="Confirma correo electrónico*" pattern="[a-z0-5]{8,0" >
+                    <input type="text" id="confirm_email" name="confirm_email" placeholder="Confirma correo electrónico" >
                 </div>
                 <br>
                 <div>
                     <label class="info" for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" placeholder="Nombre*" required>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
                 </div>
                 <br>
                 <div>
@@ -32,29 +32,29 @@
                 <br>
                 <div>
                     <label class="info" for="lastname">Primer apellido:</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Primer apellido*" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Primer apellido" required>
                 </div>
                 <br>
                 <div>
                     <label class="info" for="second_lastname">Segundo apellido:</label>
-                    <input type="text" id="second_lastname" name="second_lastname" placeholder="Segundo apellido*" required>
+                    <input type="text" id="second_lastname" name="second_lastname" placeholder="Segundo apellido" required>
                 </div>
                 <br>
                 <div>
                     <label class="info" for="phone">Teléfono:</label>
-                    <input type="text" id="phone" name="phone" placeholder="Número de teléfono*" required>
+                    <input type="text" id="phone" name="phone" placeholder="Número de teléfono" required>
                 </div>
                 <br>
                 <div>
                     <label class="info" for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" placeholder="Contraseña*" required>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
                 </div>
 
             </fieldset>
         </section>
         <br>
         <div>
-            <input id="privacy" type="checkbox" name="privacy">
+            <input id="privacy" type="checkbox" name="privacy" required>
             <label for="privacy" class="terms">He leído y acepto el <a href=""><strong>Aviso de Privacidad</strong></a></label>
         </div>
         <br>
