@@ -11,7 +11,7 @@ class CreateProfileController extends Controller
 {
     public function show(): View
     {
-        return view('/create-profile');
+        return view('create-profile');
     }
 
     public function store(Request $request): RedirectResponse
