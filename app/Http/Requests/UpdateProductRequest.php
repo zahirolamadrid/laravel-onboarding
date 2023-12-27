@@ -23,7 +23,7 @@ class UpdateProductRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:250'.$this->product->id,
-            'description' => 'nullable|string'
+            'description' => 'nullable|string',
         ];
     }
 }

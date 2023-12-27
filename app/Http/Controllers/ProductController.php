@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+use App\Models\Product;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 
@@ -16,6 +16,7 @@ class ProductController extends Controller
     public function index(): View
     {
         $products = Product::all();
+
         return view('products.index', compact('products'));
     }
 
@@ -30,15 +31,16 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProductRequest $request) : RedirectResponse
+    public function store(StoreProductRequest $request): RedirectResponse
     {
 
         $product = new Product();
         $product->name = $request->name;
         $product->description = $request->description;
         $product->save();
+
         return redirect()->route('products.index')
-                ->withSuccess('El nuevo producto fue agregado satisfactoriamente.');
+            ->withSuccess('El nuevo producto fue agregado satisfactoriamente.');
     }
 
     /**
@@ -54,7 +56,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product): View
     {
-        return view('products.edit',compact('product'));
+        return view('products.edit', compact('product'));
     }
 
     /**
@@ -65,6 +67,7 @@ class ProductController extends Controller
         $product->name = $request->name;
         $product->description = $request->description;
         $product->save();
+
         return redirect()->route('products.index')
             ->withSuccess('El nuevo producto fue actualizado satisfactoriamente.');
     }
@@ -75,6 +78,7 @@ class ProductController extends Controller
     public function destroy(Product $product): RedirectResponse
     {
         $product->delete();
+
         return redirect()->route('products.index');
     }
 }
