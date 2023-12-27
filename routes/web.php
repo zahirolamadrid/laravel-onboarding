@@ -4,9 +4,6 @@ use App\Http\Controllers\AddProductsController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
-
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
