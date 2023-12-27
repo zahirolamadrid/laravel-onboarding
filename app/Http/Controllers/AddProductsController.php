@@ -19,7 +19,7 @@ class AddProductsController extends Controller
         return view('leads.add_products', compact('products'));
     }
 
-    public function store(Request $request): RedirectResponse|View
+    public function store(Request $request): View
     {
         $products_ids = $request->all();
         array_shift($products_ids);
