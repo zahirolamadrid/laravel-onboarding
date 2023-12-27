@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
-
+use App\Http\Controllers\CreateProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,14 +19,6 @@ Route::get('/', function () {
 });
 
 Route::resource('/products', ProductController::class);
-
-
-
-
-
-
-
-
 
 Route::get('/create-profile', [CreateProfileController::class,'show'])->name("create-profile.show");
 
