@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\AddProductsController;
+use App\Http\Controllers\CreateProfileController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CreateProfileController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
