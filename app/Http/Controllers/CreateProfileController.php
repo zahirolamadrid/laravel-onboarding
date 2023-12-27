@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lead;
-use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-
+use Illuminate\View\View;
 
 class CreateProfileController extends Controller
 {
@@ -14,7 +13,6 @@ class CreateProfileController extends Controller
     {
         return view('/create-profile');
     }
-
 
     public function store(Request $request): RedirectResponse
     {
@@ -28,8 +26,9 @@ class CreateProfileController extends Controller
         $profile->password = $request->password;
         $profile->phone = $request->phone;
         $profile->save();
+
         return redirect()->route('create-profile.show')
-        ->withSuccess('Se ha registrado satisfactoriamente.');
+            ->withSuccess('Se ha registrado satisfactoriamente.');
 
     }
 }
