@@ -47,7 +47,18 @@
             </fieldset>
             <br>
             <button type="submit">Siguiente</button>
+            <script>
+                function myFunction() {
+                    let checkBox = document.getElementById("employed");
+                    let div = document.getElementById("job-information");
 
+                    if (checkBox.checked === true) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                }
+            </script>
         </section>
     </form>
 
