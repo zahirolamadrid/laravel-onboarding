@@ -16,7 +16,10 @@
                 <legend>
                     <h2>Información financiera</h2><!-- Título campo -->
                 </legend>
-                    <div class="marco">
+                <form>
+
+                </form>
+                <div class="marco">
                         <input id="employed" type="radio" name="status" onclick="myFunction()">
                         <label for="employed" class="info">Empleado</label>
                             <div id="job-information" style="display:none">
@@ -34,25 +37,22 @@
                                 <input type="text" id="gross-monthly-salary" name="gross-monthly-salary" placeholder="Salario mensual bruto" required/>
                             </div>
                         <br>
-                        <input id="unemployed" type="radio" name="status">
+                        <input id="unemployed" type="radio" name="status" onclick="myFunction()">
                         <label for="unemployed" class="info">No empleado</label>
                         <br>
-                        <input id="retired" type="radio" name="status">
+                        <input id="retired" type="radio" name="status" onclick="myFunction()">
                         <label for="retired" class="info">Retirado</label>
-                        <label for="company-name">Nombre de la compañía:</label>
-                        <input type="hidden" id="company-name" name="company-name" placeholder="Nombre de la compañía" required/>
                         <br>
                     </div>
-
             </fieldset>
             <br>
             <button type="submit">Siguiente</button>
             <script>
                 function myFunction() {
-                    let checkBox = document.getElementById("employed");
+                    let employed = document.getElementById("employed");
                     let div = document.getElementById("job-information");
 
-                    if (checkBox.checked === true) {
+                    if (employed.checked === true) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
