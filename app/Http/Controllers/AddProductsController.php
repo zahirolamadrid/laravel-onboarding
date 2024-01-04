@@ -20,13 +20,8 @@ class AddProductsController extends Controller
 
     public function store(Request $request): View
     {
-        $products_ids = $request->all();
-        array_shift($products_ids);
-        $products = collect([]);
-        foreach ($products_ids as $id) {
-            $product = Product::find($id);
-            $products->push($product);
-        }
+        $productIds = $request->except('_token');
+        $products = Product::findMany($productIds);
 
         return view('leads.products_select', compact('products'));
     }
