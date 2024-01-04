@@ -1,6 +1,7 @@
 <x-layout>
-    <h1>Selecciona lo que necesitas</h1>
-    <p>Elige una o varias de las soluciones que tenemos para hacer crecer tu empresa y comenzar a ganar.</p>
+    <h1>Información financiera</h1>
+    <p>Seleccione una opción para continuar:    </p>
+
     <style>
         .marco{
             border:1px solid black;
@@ -13,17 +14,11 @@
         @csrf
         <section>
             <fieldset>
-                <legend>
-                    <h2>Información financiera</h2><!-- Título campo -->
-                </legend>
-                <form>
-
-                </form>
                 <div class="marco">
                         <input id="employed" type="radio" name="status" onclick="myFunction()">
                         <label for="employed" class="info">Empleado</label>
-                            <div id="job-information" style="display:none">
-                                <br>
+                            <div class="text-input" id="job-information" style="display:none">
+                                <p>Completa la siguiente información: </p>
                                 <label for="company-name" id="company-name">Nombre de la compañía:</label>
                                 <br>
                                 <input type="text" id="company-name" name="company-name" placeholder="Nombre de la compañía" required/>
