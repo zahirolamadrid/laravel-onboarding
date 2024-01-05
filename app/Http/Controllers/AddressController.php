@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\View\View;
+
 class AddressController extends Controller
 {
     public function show(): View
     {
-          $states = [
+        $states = [
             'estadomexico' => 'Estado de México',
             'jalisco' => 'Jalisco',
             'michoacan' => 'Michoacán',
@@ -41,7 +42,8 @@ class AddressController extends Controller
             'colima' => 'Colima',
             'campeche' => 'Campeche',
 
-          ];
-        return view ('address', compact('states'));
-            }
+        ];
+
+        return view('address', compact('states'));
+    }
 }
