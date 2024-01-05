@@ -1,16 +1,19 @@
 <x-layout>
-    <div><h3>Productos</h3></div>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        .add-new-product{
+            width: 20%;
+            background-color: white;
+        }
+    </style>
+    <h3>Productos</h3>
     <div>
-        <button type="submit"><a href="{{ route('products.create') }}">Adicionar nuevo producto</a></button>
+        <button class="add-new-product" type="submit"><a href="{{ route('products.create') }}">Adicionar nuevo producto</a></button>
     </div>
     <div>
         <br>
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-        </style>
         <table class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -27,9 +30,9 @@
                 <td>{{$product->name}}</td>
                 <td>{{$product->description}}</td>
                 <td>
-                    <button type="submit"><a href="{{ route('products.show', $product->id) }}">Mostrar</a></button>
-                    <button type="submit"><a href="{{ route('products.edit', $product->id) }}">Editar</a></button>
                     <form action="{{ route('products.destroy', $product->id) }}" method="post">
+                        <button type="submit"><a href="{{ route('products.show', $product->id) }}">Mostrar</a></button>
+                        <button type="submit"><a href="{{ route('products.edit', $product->id) }}">Editar</a></button>
                         @csrf
                         @method('DELETE')
                         <button type="submit" onclick="return confirm('¿Quieres eliminar este producto?');">Borrar</button>
