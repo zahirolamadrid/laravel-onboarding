@@ -17,6 +17,7 @@ class AddressController extends Controller
             'chiapas' => 'Chiapas',
             'nleon' => 'Nuevo León',
             'guanajuato' => 'Guanajuato',
+            'guerrero' => 'Guerrero',
             'hidalgo' => 'Hidalgo',
             'sonora' => 'Sonora',
             'tamaulipas' => 'Tamaulipas',

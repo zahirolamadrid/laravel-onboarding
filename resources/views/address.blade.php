@@ -38,9 +38,9 @@
         <label for="state">Estado:</label>
 
                 <select name="state" id="state">
+                    <option value="seleccionar">Selecciona un Estado</option>
                     @foreach($states as $state)
-                         <option value="seleccionar">Selecciona un Estado</option>
-                         <option value={{$state}}>{{$state}}</option>
+                        <option value={{$state}}>{{$state}}</option>
                     @endforeach
                 </select>
 
