@@ -10,7 +10,7 @@
         }
     </style>
 
-    <form action="{{ route('add_products.store')}}" method="get">
+    <form action="/leads/financial-information" method="get">
         @csrf
         <section>
             <fieldset>
