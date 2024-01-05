@@ -38,7 +38,7 @@ class AddressController extends Controller
             'queretaro' => 'Querétaro',
             'oaxaca' => 'Oaxaca',
             'zacateca' => 'Zacatecas',
-            'aguas-calientes' => 'Aguascalientes',
+            'aguascalientes' => 'Aguascalientes',
             'colima' => 'Colima',
             'campeche' => 'Campeche',
 
