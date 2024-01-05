@@ -1,6 +1,6 @@
 <x-layout>
         <br>
-    <h1>FORMULARIO DE DIRECCION</h1>
+    <h1>Formulario de Dirección</h1>
     <form method="POST" action="/address">
         @csrf
         <br>
@@ -36,11 +36,14 @@
         <br>
     <div>
         <label for="state">Estado:</label>
-        @foreach($states as $state)
+
                 <select name="state" id="state">
-                    <option {{$state}}</option>
+                    @foreach($states as $state)
+                         <option value="seleccionar">Selecciona un Estado</option>
+                         <option value={{$state}}>{{$state}}</option>
+                    @endforeach
                 </select>
-        @endforeach
+
             </div>
         <br>
     <div>

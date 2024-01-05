@@ -2,15 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\View\View;
-use App\Models\Profile;
 class AddressController extends Controller
 {
-    public function show(Profile $states): View
+    public function show(): View
     {
-        $states = new Profile();
-        $state = [
+          $states = [
             'estadomexico' => 'Estado de México',
             'jalisco' => 'Jalisco',
             'michoacan' => 'Michoacán',
@@ -43,8 +40,7 @@ class AddressController extends Controller
             'colima' => 'Colima',
             'campeche' => 'Campeche',
 
-        ];
-
-        return view ('address');
-    }
+          ];
+        return view ('address', compact('states'));
+            }
 }
