@@ -10,7 +10,7 @@
         }
     </style>
 
-    <form action="" method="post">
+    <form action="{{ route('add_products.store')}}" method="get">
         @csrf
         <section>
             <fieldset>
@@ -29,7 +29,7 @@
                                 <br>
                                 <label for="gross-monthly-salary" >Salario mensual bruto:</label>
                                 <br>
-                                <input type="text" id="gross-monthly-salary" name="gross-monthly-salary" placeholder="Salario mensual bruto" required/>
+                                <input type="number" id="gross-monthly-salary" name="gross-monthly-salary" placeholder="Salario mensual bruto" min="0" step="0.01" required/>
                             </div>
                         <br>
                         <input id="unemployed" type="radio" name="status" onclick="myFunction()">
@@ -41,7 +41,6 @@
                     </div>
             </fieldset>
             <br>
-            <button type="submit">Siguiente</button>
             <script>
                 function myFunction() {
                     let employed = document.getElementById("employed");
@@ -54,6 +53,8 @@
                     }
                 }
             </script>
+            <button type="submit" onclick="return confirm('Se ha adicionado su información financiera')">Siguiente</button>
+
         </section>
     </form>
 
