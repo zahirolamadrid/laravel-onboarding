@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AddressController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,4 @@ Route::get('/', function () {
 
 Route::resource('/products', ProductController::class);
 
-Route::get('/address', function () {
-    return view('address');
-});
+Route::get('/address', [AddressController::class, 'show']);
