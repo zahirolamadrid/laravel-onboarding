@@ -15,7 +15,7 @@
         <section>
             <fieldset>
                 <div class="marco">
-                        <input id="employed" type="radio" name="status" onclick="myFunction()">
+                        <input id="employed" type="radio" name="status" onclick="employedInformation()">
                         <label for="employed" class="info">Empleado</label>
                             <div class="text-input" id="job-information" style="display:none">
                                 <p>Completa la siguiente información: </p>
@@ -32,17 +32,17 @@
                                 <input type="number" id="gross-monthly-salary" name="gross-monthly-salary" placeholder="Salario mensual bruto" min="0" step="0.01" required/>
                             </div>
                         <br>
-                        <input id="unemployed" type="radio" name="status" onclick="myFunction()">
+                        <input id="unemployed" type="radio" name="status" onclick="employedInformation ()">
                         <label for="unemployed" class="info">No empleado</label>
                         <br>
-                        <input id="retired" type="radio" name="status" onclick="myFunction()">
+                        <input id="retired" type="radio" name="status" onclick="employedInformation()">
                         <label for="retired" class="info">Retirado</label>
                         <br>
                     </div>
             </fieldset>
             <br>
             <script>
-                function myFunction() {
+                function employedInformation() {
                     let employed = document.getElementById("employed");
                     let div = document.getElementById("job-information");
 
