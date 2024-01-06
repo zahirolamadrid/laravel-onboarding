@@ -25,7 +25,7 @@ class AddressController extends Controller
             'nayarit' => 'Nayarit',
             'tlaxcala' => 'Tlaxcala',
             'quintana-roo' => 'Quintana Roo',
-            'cohauila-de-Zaragoza' => 'Cohauila de Zaragoza',
+            'cohauila-de-zaragoza' => 'Cohauila de Zaragoza',
             'morelos' => 'Morelos',
             'san-luis-potosi' => 'San Luis Potosí',
             'durango' => 'Durango',
