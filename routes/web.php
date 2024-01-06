@@ -32,3 +32,7 @@ Route::post('/create-profile', [CreateProfileController::class, 'store'])->name(
 Route::get('/address', function () {
     return view('address');
 });
+
+Route::get('/leads/financial-information', function () {
+    return view('leads.financial_information');
+});
