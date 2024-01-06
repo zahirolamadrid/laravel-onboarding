@@ -11,12 +11,12 @@
         <br>
     <div>
         <label for="number">Número:</label>
-        <input type="text" id="number" name="number" placeholder="Número" required>
+        <input type="number" id="number" name="number" placeholder="Número" required>
     </div>
         <br>
     <div>
         <label for="interior-number">Número interior:</label>
-        <input type="text" id="interior-number" name="interior-number" placeholder="Número interior">
+        <input type="number" id="interior-number" name="interior-number" placeholder="Número interior">
     </div>
         <br>
     <div>
@@ -43,7 +43,6 @@
                         <option value={{$state}}>{{$state}}</option>
                     @endforeach
                 </select>
-
             </div>
         <br>
     <div>
