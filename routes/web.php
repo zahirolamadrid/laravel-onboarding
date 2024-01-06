@@ -29,9 +29,7 @@ Route::get('/create-profile', [CreateProfileController::class, 'show'])->name('c
 
 Route::post('/create-profile', [CreateProfileController::class, 'store'])->name('create-profile.store');
 
-Route::get('/address', function () {
-    return view('address');
-});
+Route::get('/address', [AddressController::class, 'show']);
 
 Route::get('/leads/financial-information', function () {
     return view('leads.financial_information');
