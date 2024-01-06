@@ -41,9 +41,9 @@
             </tr>
             @empty
                 <td colspan="6">
-                                <span class="text-danger">
-                                    <strong>¡Producto no encontrado!</strong>
-                                </span>
+                    <span class="text-danger">
+                        <strong>¡Producto no encontrado!</strong>
+                    </span>
                 </td>
             @endforelse
             </tbody>

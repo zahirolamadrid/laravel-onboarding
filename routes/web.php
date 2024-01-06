@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\AddProductsController;
-use App\Http\Controllers\AddressController;
 use App\Http\Controllers\CreateProfileController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -31,3 +30,7 @@ Route::get('/create-profile', [CreateProfileController::class, 'show'])->name('c
 Route::post('/create-profile', [CreateProfileController::class, 'store'])->name('create-profile.store');
 
 Route::get('/address', [AddressController::class, 'show']);
+
+Route::get('/leads/financial-information', function () {
+    return view('leads.financial_information');
+});
