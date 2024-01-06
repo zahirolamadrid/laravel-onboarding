@@ -11,12 +11,12 @@
         <br>
     <div>
         <label for="number">Número:</label>
-        <input type="number" id="number" name="number" placeholder="Número" required>
+        <input type="number" id="number" name="number" placeholder="Número" required min="0">
     </div>
         <br>
     <div>
         <label for="interior-number">Número interior:</label>
-        <input type="number" id="interior-number" name="interior-number" placeholder="Número interior">
+        <input type="number" id="interior-number" name="interior-number" placeholder="Número interior" min="0">
     </div>
         <br>
     <div>
