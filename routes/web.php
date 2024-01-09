@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AddProductsController;
+use App\Http\Controllers\CreateProfileController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,12 @@ Route::get('/leads/{id}/add-products', [AddProductsController::class, 'index'])-
 Route::post('/leads/add-products', [AddProductsController::class, 'store'])->name('add_products.store');
 Route::get('/leads/add-products/products_select', [AddProductsController::class, 'show'])->name('products_select.show');
 
-Route::get('/address', function () {
-    return view('address');
+Route::get('/create-profile', [CreateProfileController::class, 'show'])->name('create-profile.show');
+
+Route::post('/create-profile', [CreateProfileController::class, 'store'])->name('create-profile.store');
+
+Route::get('/address', [AddressController::class, 'show']);
+
+Route::get('/leads/financial-information', function () {
+    return view('leads.financial_information');
 });
